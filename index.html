@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>StreetWok - Authentic Chinese Cuisine</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="images/swlogo.png" alt="StreetWok Logo"></a>
+           
+		</div>
+        <h1 class="logotext"> StreetWok</h1>
+		<nav> 
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="banner">
+			<h1>Experience the Best in Chinese Cuisine</h1>
+			<p>Indulge in our delectable dishes made with authentic Chinese ingredients</p>
+			<a href="#" class="btn">View Menu</a>
+		</section>
+
+        <!--items list images-->
+        <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="slider-buttons">
+      <img id="prev-btn" class="slider-btn" src="images/previous.png" alt="<"></i>
+      <img id="next-btn" class="slider-btn" src="images/next.png"  alt=">"></i>
+   
+    <div id="menu-slider">
+      
+        <div class="menu-item">
+            <img src="images/11.png" alt="Item 1">
+            <h3>Item 1</h3>
+            <p class="price">$10.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/10.png" alt="Item 2">
+            <h3>Item 2</h3>
+            <p class="price">$12.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/9.png" alt="Item 3">
+            <h3>Item 3</h3>
+            <p class="price">$15.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/8.png" alt="Item 4">
+            <h3>Item 4</h3>
+            <p class="price">$8.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/7.png" alt="Item 5">
+            <h3>Item 5</h3>
+            <p class="price">$9.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/6.png" alt="Item 5">
+            <h3>Item 5</h3>
+            <p class="price">$9.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/5.png" alt="Item 5">
+            <h3>Item 5</h3>
+            <p class="price">$9.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/4.png" alt="Item 5">
+            <h3>Item 5</h3>
+            <p class="price">$9.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/3.png" alt="Item 5">
+            <h3>Item 5</h3>
+            <p class="price">$9.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/2.png" alt="Item 5">
+            <h3>Item 5</h3>
+            <p class="price">$9.00</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/1.png" alt="Item 5">
+            <h3>Item 5</h3>
+            <p class="price">$9.00</p>
+        </div>
+       
+    </div>
+    
+      <script> 
+
+
+
+        const menuSlider = document.getElementById('menu-slider');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+
+let scrollPos = 0;
+
+prevBtn.addEventListener('click', () => {
+  menuSlider.scrollLeft = Math.max(0, scrollPos - 310);
+  scrollPos = menuSlider.scrollLeft;
+});
+
+nextBtn.addEventListener('click', () => {
+  menuSlider.scrollLeft = Math.min(menuSlider.scrollWidth - menuSlider.clientWidth, scrollPos + 310);
+  scrollPos = menuSlider.scrollLeft;
+});
+
+        </script>
+</section>
+
+<!--image galley section-->
+<section id="gallery">
+    <h2>My Instagram Feed</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/8.png" alt="Item 5">
+      </div>
+      <div class="gallery-item">
+        <img src="images/7.png" alt="Item 5">
+      </div>
+      <div class="gallery-item">
+        <img src="images/6.png" alt="Item 5">
+      </div>
+      <div class="gallery-item">
+        <img src="images/5.png" alt="Item 5">
+      </div>
+      <div class="gallery-item">
+        <img src="images/4.png" alt="Item 5">
+      </div>
+      <div class="gallery-item">
+        <img src="images/3.png" alt="Item 5">
+      </div>
+      <div class="gallery-item">
+        <img src="images/2.png" alt="Item 5">
+      </div>
+      <div class="gallery-item">
+        <img src="images/1.png" alt="Item 5">
+      </div>
+    </div>
+  </section>
+  
+
+		<section id="about">
+			<div class="container">
+				<h2>About Us</h2>
+				<p>At StreetWok, we are passionate about bringing the best in Chinese cuisine to our customers. Our chefs use only the finest and freshest ingredients to create mouthwatering dishes that are sure to satisfy your cravings. Whether you're in the mood for savory stir-fry or spicy noodles, we've got something for everyone.</p>
+			</div>
+		</section>
+		<section id="menu">
+			<div class="container">
+				<h2>Our Menu</h2>
+				<div class="menu-item">
+					<img src="images/menu1.jpg" alt="Menu Item">
+					<h3>Stir-Fry Noodles</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante vel purus vehicula facilisis a sed mauris.</p>
+					<span class="price">$10.99</span>
+				</div>
+				<div class="menu-item">
+					<img src="images/menu2.jpg" alt="Menu Item">
+					<h3>Kung Pao Chicken</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante vel purus vehicula facilisis a sed mauris.</p>
+					<span class="price">$12.99</span>
+				</div>
+				<div class="menu-item">
+					<img src="images/menu3.jpg" alt="Menu Item">
+					<h3>Sesame Beef</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante vel purus vehicula facilisis a sed mauris.</p>
+					<span class="price">$14.99</span>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container">
+				<h2>Contact Us</h2>
+				<form action="#">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required>
+					<label for="email">Email</label>
+					<input type="email" id="email" name ="email" required>
+                    <label for="phone">Phone</label>
+<input type="tel" id="phone" name="phone" required>
+<label for="message">Message</label>
+<textarea id="message" name="message" required></textarea>
+<button type="submit" class="btn">Submit</button>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<p>© 2023 StreetWok. All Rights Reserved.</p>
+<ul>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms of Use</a></li>
+</ul>
+</div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
